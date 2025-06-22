@@ -1,13 +1,286 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VoteStream - Interactive Voting Platform</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win-Win Syndicate - Elite Casino Streaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Win-Win Syndicate</span>
+                <span class="logo-subtitle">Elite Gaming</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#streams" class="nav-link">Streams</a>
+                <a href="#ranks" class="nav-link">Ranks</a>
+                <a href="#support" class="nav-link">Support</a>
+                <button class="kick-btn">
+                    <span class="kick-icon">⚡</span>
+                    Sign in with Kick
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-cards">
+                <div class="card card-1">♠</div>
+                <div class="card card-2">♦</div>
+                <div class="card card-3">♣</div>
+                <div class="card card-4">♥</div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line-1">Welcome to the</span>
+                <span class="title-line-2">Win-Win Syndicate</span>
+                <span class="title-line-3">Elite Gaming Experience</span>
+            </h1>
+            <p class="hero-subtitle">
+                Where legends are made and fortunes are won. Join the most exclusive casino streaming community on Kick.
+            </p>
+            <div class="hero-buttons">
+                <button class="cta-primary">
+                    <span>Join the Syndicate</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="cta-secondary">
+                    <span>Watch Live Stream</span>
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2,847</span>
+                    <span class="stat-label">Active Members</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">$127K</span>
+                    <span class="stat-label">Total Winnings</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">Live</span>
+                    <span class="stat-label">Now Streaming</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stream Formats Section -->
+    <section id="streams" class="streams-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">Stream</span> Formats
+            </h2>
+            <div class="streams-grid">
+                <div class="stream-card twin-table">
+                    <div class="stream-header">
+                        <h3>Twin Table Blitz</h3>
+                        <span class="stream-badge daily">Daily</span>
+                    </div>
+                    <div class="stream-details">
+                        <div class="stream-amount">$200</div>
+                        <div class="stream-time">
+                            <span class="time-label">Every Day</span>
+                            <span class="time-value">8:00 PM Tbilisi</span>
+                        </div>
+                        <p class="stream-description">
+                            High-intensity dual table action featuring Poker, Blackjack, and Baccarat. 
+                            Watch as we navigate multiple games simultaneously.
+                        </p>
+                        <div class="stream-features">
+                            <span class="feature">Live Chat</span>
+                            <span class="feature">Real-time Odds</span>
+                            <span class="feature">Strategy Tips</span>
+                        </div>
+                    </div>
+                    <button class="stream-btn">Join Stream</button>
+                </div>
+
+                <div class="stream-card extra-blitz">
+                    <div class="stream-header">
+                        <h3>Extra Blitz</h3>
+                        <span class="stream-badge vip">VIP Only</span>
+                    </div>
+                    <div class="stream-details">
+                        <div class="stream-amount">High Stakes</div>
+                        <div class="stream-time">
+                            <span class="time-label">Subscriber Funded</span>
+                            <span class="time-value">Exclusive Access</span>
+                        </div>
+                        <p class="stream-description">
+                            Premium high-stakes gaming sessions funded by our elite subscribers. 
+                            Participate in decision-making and share in the excitement.
+                        </p>
+                        <div class="stream-features">
+                            <span class="feature">VIP Chat</span>
+                            <span class="feature">Vote on Plays</span>
+                            <span class="feature">Profit Sharing</span>
+                        </div>
+                    </div>
+                    <button class="stream-btn vip-btn">Upgrade to VIP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Viewer Rank System -->
+    <section id="ranks" class="ranks-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">Viewer</span> Rank System
+            </h2>
+            <div class="ranks-container">
+                <div class="rank-card bronze">
+                    <div class="rank-icon">🥉</div>
+                    <h3>Bronze</h3>
+                    <div class="rank-requirement">$10+ Support</div>
+                    <ul class="rank-benefits">
+                        <li>Basic chat privileges</li>
+                        <li>Stream notifications</li>
+                        <li>Community access</li>
+                    </ul>
+                </div>
+                <div class="rank-card silver">
+                    <div class="rank-icon">🥈</div>
+                    <h3>Silver</h3>
+                    <div class="rank-requirement">$50+ Support</div>
+                    <ul class="rank-benefits">
+                        <li>Priority chat</li>
+                        <li>Strategy discussions</li>
+                        <li>Weekly highlights</li>
+                        <li>Exclusive emotes</li>
+                    </ul>
+                </div>
+                <div class="rank-card gold">
+                    <div class="rank-icon">🥇</div>
+                    <h3>Gold</h3>
+                    <div class="rank-requirement">$150+ Support</div>
+                    <ul class="rank-benefits">
+                        <li>VIP chat access</li>
+                        <li>Game suggestions</li>
+                        <li>Monthly meetups</li>
+                        <li>Custom badges</li>
+                        <li>Early stream access</li>
+                    </ul>
+                </div>
+                <div class="rank-card platinum">
+                    <div class="rank-icon">💎</div>
+                    <h3>Platinum</h3>
+                    <div class="rank-requirement">$500+ Support</div>
+                    <ul class="rank-benefits">
+                        <li>Direct streamer contact</li>
+                        <li>Strategy consultations</li>
+                        <li>Profit sharing events</li>
+                        <li>Exclusive tournaments</li>
+                        <li>Personal shoutouts</li>
+                    </ul>
+                </div>
+                <div class="rank-card elite">
+                    <div class="rank-icon">👑</div>
+                    <h3>Elite</h3>
+                    <div class="rank-requirement">$1000+ Support</div>
+                    <ul class="rank-benefits">
+                        <li>Co-streaming opportunities</li>
+                        <li>Investment partnerships</li>
+                        <li>Private gaming sessions</li>
+                        <li>Revenue sharing</li>
+                        <li>Syndicate membership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support-section">
+        <div class="container">
+            <div class="support-content">
+                <div class="support-text">
+                    <h2>Support the Syndicate</h2>
+                    <p>Your support fuels our high-stakes adventures and helps us bring you the most exciting casino streaming content. Join the elite circle of supporters and become part of something extraordinary.</p>
+                    <div class="support-benefits">
+                        <div class="benefit">
+                            <span class="benefit-icon">🎯</span>
+                            <span>Influence game selection</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">💰</span>
+                            <span>Share in the winnings</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">🎪</span>
+                            <span>Exclusive content access</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="support-actions">
+                    <button class="support-btn primary">
+                        <span class="btn-icon">💳</span>
+                        <span>Support the Stream</span>
+                    </button>
+                    <button class="support-btn secondary">
+                        <span class="btn-icon">₿</span>
+                        <span>Deposit USDT</span>
+                    </button>
+                    <button class="support-btn kick">
+                        <span class="btn-icon">⚡</span>
+                        <span>Subscribe on Kick</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Win-Win Syndicate</h3>
+                    <p>Elite casino streaming for the discerning viewer.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Streaming</h4>
+                        <a href="#">Live Schedule</a>
+                        <a href="#">Past Streams</a>
+                        <a href="#">Highlights</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Community</h4>
+                        <a href="#">Discord</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="#">Contact</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Win-Win Syndicate. All rights reserved.</p>
+                <p>Gamble responsibly. 18+ only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
